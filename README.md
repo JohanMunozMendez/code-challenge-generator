@@ -99,7 +99,12 @@ To receive Clerk webhooks locally, you need to expose your backend using ngrok:
 ngrok http 8000
 ```
 
-Copy the generated HTTPS URL and set it as your webhook endpoint in the Clerk dashboard.
+Copy the generated HTTPS URL and set it as your webhook endpoint in the Clerk dashboard.  
+**Example:** If ngrok gives you `https://abc123.ngrok-free.app`, set your webhook URL as:
+
+```
+https://abc123.ngrok-free.app/webhooks/clerk
+```
 
 ---
 
