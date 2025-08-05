@@ -50,6 +50,7 @@ Make sure you have the following installed:
 - Python 3.12+
 - Node.js 18+
 - [`uv`](https://github.com/astral-sh/uv) (Python package manager)
+- [ngrok](https://ngrok.com/) (for Clerk webhooks)
 - OpenAI API key
 - Clerk account: [https://clerk.com/](https://clerk.com/)
 
@@ -90,6 +91,16 @@ uv run server.py
 
 > The FastAPI server will run at [http://localhost:8000](http://localhost:8000)
 
+#### Clerk Webhooks (ngrok)
+
+To receive Clerk webhooks locally, you need to expose your backend using ngrok:
+
+```sh
+ngrok http 8000
+```
+
+Copy the generated HTTPS URL and set it as your webhook endpoint in the Clerk dashboard.
+
 ---
 
 ### 4. Frontend Setup
@@ -108,6 +119,7 @@ npm install
 #### Run Frontend:
 
 ```sh
+cd src
 npm run dev
 ```
 
