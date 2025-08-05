@@ -155,7 +155,7 @@ If needed, you can modify this in [`frontend/src/utils/api.js`](frontend/src/uti
 2. **Start the Frontend:**
 
    ```sh
-   cd frontend && npm run dev
+   cd frontend/src && npm run dev
    ```
 
 3. **Open in Browser:**  
